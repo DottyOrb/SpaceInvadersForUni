@@ -1,3 +1,4 @@
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 
 public class Invader : MonoBehaviour
@@ -6,6 +7,7 @@ public class Invader : MonoBehaviour
     public float animationTime;
     public System.Action killed;
     public int invaderScore;
+    //public Projectile PowerUp;
 
     private SpriteRenderer _spriteRenderer;
     private int _animationFrame;
@@ -35,6 +37,12 @@ public class Invader : MonoBehaviour
     {
         if (other.gameObject.layer == LayerMask.NameToLayer("Laser"))
         {
+            
+            /*int SpawnPowerUp = Random.Range(0, 20);
+            if (SpawnPowerUp == 19)
+            {
+                Instantiate(this.PowerUp, transform.position, Quaternion.identity);
+            }*/
             this.killed.Invoke();
             this.gameObject.SetActive(false);
             ScoreManager.instance.AddToScore(invaderScore);

@@ -7,9 +7,17 @@ public class Player : MonoBehaviour
     public Projectile laserPrefab;
     public float speed = 5.0f;
     private bool _laserActive;
+    private bool PowerUpActive;
     public int lives = 3;
     public TMP_Text LivesText;
     public PauseSystem pauseSystem;
+    //public GameObject _Beam;
+
+    /*private void Start()
+    {
+        _Beam = GameObject.Find("Beam");
+        //_Beam.SetActive(false);
+    }*/
 
     private void Update()
     {
@@ -41,6 +49,7 @@ public class Player : MonoBehaviour
         }   
     }
 
+
     private void LaserDestroyed() 
     { 
         _laserActive = false;
@@ -48,15 +57,16 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer == LayerMask.NameToLayer("Invader") || other.gameObject.layer == LayerMask.NameToLayer("Missile")) 
+        if (other.gameObject.layer == LayerMask.NameToLayer("Invader") || other.gameObject.layer == LayerMask.NameToLayer("Missile"))
         {
             lives--;
             LivesText.text = "LIVES: " + lives.ToString();
-            if (lives <= 0) 
+            if (lives <= 0)
             {
                 pauseSystem.GameOverToggle();
             }
         }
+        
     }
 
 }

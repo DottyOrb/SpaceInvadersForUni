@@ -150,6 +150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animationSprites: []
   animationTime: 1
+  invaderScore: 0
+  PowerUp: {fileID: 4902057277499109351, guid: a1bec1deef986b14aad77e7f42500b87, type: 3}
 --- !u!50 &-4400967203948865390
 Rigidbody2D:
   serializedVersion: 5

@@ -428,6 +428,7 @@
 "Assets/Scripts/MysteryShip.cs"
 "Assets/Scripts/PauseSystem.cs"
 "Assets/Scripts/Player.cs"
+"Assets/Scripts/PowerUp.cs"
 "Assets/Scripts/Projectile.cs"
 "Assets/Scripts/ScoreManager.cs"
 -langversion:9.0
