@@ -1,5 +1,5 @@
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Invader : MonoBehaviour
 {
@@ -46,6 +46,10 @@ public class Invader : MonoBehaviour
             this.killed.Invoke();
             this.gameObject.SetActive(false);
             ScoreManager.instance.AddToScore(invaderScore);
+        }
+        if (other.gameObject.layer == LayerMask.NameToLayer("Boundary") || other.gameObject.layer == LayerMask.NameToLayer("Player")) 
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 

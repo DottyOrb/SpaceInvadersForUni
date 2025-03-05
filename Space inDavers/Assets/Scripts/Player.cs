@@ -99,7 +99,7 @@ public class Player : MonoBehaviour
             LivesText.text = "LIVES: " + lives.ToString();
             if (lives <= 0)
             {
-                pauseSystem.GameOverToggle();
+                SceneManager.LoadScene("GameOver");
             }
         }
         if (other.gameObject.layer == LayerMask.NameToLayer("PowerUp"))
@@ -117,8 +117,7 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(delay);
         _Beam.SetActive(false);
         Debug.Log("EndBeam");
-        //_PowerUp.SetActive(false);
-        Destroy(this._PowerUp); 
+        
     }
 
 }

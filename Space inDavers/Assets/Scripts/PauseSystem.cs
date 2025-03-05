@@ -5,47 +5,50 @@ public class PauseSystem : MonoBehaviour
 {
     public static bool isPaused;
     public GameObject PauseMenu;
-    public GameObject GameOverMenu;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape)) 
-        { 
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
             isPaused = !isPaused;
             PauseToggle();
         }
     }
 
-    void PauseToggle() 
+    void PauseToggle()
     {
         if (isPaused)
         {
             Time.timeScale = 0.0f;
             PauseMenu.SetActive(true);
         }
-        else 
+        else
         {
             Time.timeScale = 1.0f;
             PauseMenu.SetActive(false);
         }
     }
-    public void GameOverToggle() 
+
+    public void ResumeButton() 
     {
         isPaused = !isPaused;
-        Time.timeScale = 0.0f;
-        GameOverMenu.SetActive(true);
+        PauseToggle();
     }
-
-    public void GO_Restart() 
+    
+    public void RestartButton() 
     {
         isPaused = !isPaused;
         Time.timeScale = 1.0f;
-        GameOverMenu.SetActive(false);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void GO_Quit() 
+    public void titleButton() 
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void QuitButton() 
     { 
         Application.Quit();
     }
