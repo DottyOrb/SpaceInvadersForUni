@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -11,13 +12,15 @@ public class Player : MonoBehaviour
     public int lives = 3;
     public TMP_Text LivesText;
     public PauseSystem pauseSystem;
-    //public GameObject _Beam;
+    public GameObject _Beam;
+    public GameObject _PowerUp;
 
-    /*private void Start()
+    private void Start()
     {
         _Beam = GameObject.Find("Beam");
-        //_Beam.SetActive(false);
-    }*/
+        _Beam.SetActive(false);
+        Debug.Log("Start");
+    }
 
     private void Update()
     {
@@ -66,7 +69,22 @@ public class Player : MonoBehaviour
                 pauseSystem.GameOverToggle();
             }
         }
-        
+        if (other.gameObject.layer == LayerMask.NameToLayer("PowerUp"))
+        {
+            Debug.Log("Collision1");
+            _Beam.SetActive(true);
+            Debug.Log("Collision2");
+            StartCoroutine(EndBeam(1));
+        }
+
+    }
+    private IEnumerator EndBeam(float delay)
+    {
+        Debug.Log("hi");
+        yield return new WaitForSeconds(delay);
+        _Beam.SetActive(false);
+        Debug.Log("EndBeam");
+        _PowerUp.SetActive(false);
     }
 
 }

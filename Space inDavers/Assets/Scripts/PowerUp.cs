@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PowerUp : MonoBehaviour
 {
-    public GameObject _Beam;
-    //public GameObject _PowerUp;
+    /*public GameObject _Beam;
+    public GameObject _PowerUp;
 
     private void Start()
     {
@@ -21,21 +21,16 @@ public class PowerUp : MonoBehaviour
             Debug.Log("Collision1");
             _Beam.SetActive(true);
             Debug.Log("Collision2");
-            //StartCoroutine(EndBeam(2.0f));
-            Invoke("EndBeam", 2);
+            StartCoroutine(EndBeam(3));
         }
     }
 
-    private void EndBeam() 
+    private IEnumerator EndBeam(float delay) 
     {
-        _Beam.SetActive(false);
-    }
-
-    /*private IEnumerator EndBeam(float delay) 
-    { 
+        Debug.Log("hi");
         yield return new WaitForSeconds(delay);
         _Beam.SetActive(false);
         Debug.Log("EndBeam");
-        //_PowerUp.SetActive(false);
+        _PowerUp.SetActive(false);
     }*/
 }
