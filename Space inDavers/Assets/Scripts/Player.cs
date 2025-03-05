@@ -5,6 +5,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour
 {
+    public static Player Instance;
     public Projectile laserPrefab;
     public float speed = 5.0f;
     private bool _laserActive;
@@ -15,6 +16,9 @@ public class Player : MonoBehaviour
     public GameObject _Beam;
     public GameObject _PowerUp;
 
+    
+    
+
     private void Start()
     {
         _Beam = GameObject.Find("Beam");
@@ -24,6 +28,18 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        Vector3 leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
+        Vector3 rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
+
+        if (this.transform.position.x <= leftEdge.x + 1.0f)
+        {
+            TransportRight();
+        }
+        else if (this.transform.position.x >= rightEdge.x - 1.0f)
+        {
+            TransportLeft();
+        }
+
         if (!PauseSystem.isPaused) 
         {
             if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
@@ -40,6 +56,23 @@ public class Player : MonoBehaviour
                 Shoot();
             }
         }
+    }
+
+    private void TransportRight() 
+    {
+        Vector3 rightEdge = Camera.main.ViewportToWorldPoint(Vector3.right);
+
+        Vector3 position = this.transform.position;
+        position.x = rightEdge.x - 1.0f;
+        this.transform.position = position;
+    }
+    private void TransportLeft()
+    {
+        Vector3 leftEdge = Camera.main.ViewportToWorldPoint(Vector3.zero);
+
+        Vector3 position = this.transform.position;
+        position.x = leftEdge.x + 1.0f;
+        this.transform.position = position;
     }
 
     private void Shoot()
@@ -84,7 +117,8 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(delay);
         _Beam.SetActive(false);
         Debug.Log("EndBeam");
-        _PowerUp.SetActive(false);
+        //_PowerUp.SetActive(false);
+        Destroy(this._PowerUp); 
     }
 
 }
