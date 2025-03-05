@@ -1,12 +1,19 @@
 <linker>
 	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="GameOverScript">
+			<method name="GO_Quit"/>
+			<method name="GO_Restart"/>
+			<method name="GO_Title"/>
+		</type>
 		<type fullname="MainMenu">
 			<method name="QuitGame"/>
 			<method name="StartGame"/>
 		</type>
 		<type fullname="PauseSystem">
-			<method name="GO_Quit"/>
-			<method name="GO_Restart"/>
+			<method name="QuitButton"/>
+			<method name="RestartButton"/>
+			<method name="ResumeButton"/>
+			<method name="titleButton"/>
 		</type>
 	</assembly>
 </linker>

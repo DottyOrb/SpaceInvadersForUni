@@ -2,13 +2,18 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - Bunker
+    - GameOverScript
     - Invader
     - Invaders
     - MainMenu
     - PauseSystem
     - Player
+    - PowerUp
     - Projectile
     - ScoreManager
+    - VanLeft
+    - VanRight
+    - VanSpawning
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.Animation.Runtime.dll:
@@ -107,11 +112,83 @@ ScriptsOnlyBuild:
     methodName: StartGame
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
-    methodName: GO_Quit
+    methodName: titleButton
   - assembly: Assembly-CSharp
     fullTypeName: PauseSystem
+    methodName: QuitButton
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: RestartButton
+  - assembly: Assembly-CSharp
+    fullTypeName: PauseSystem
+    methodName: ResumeButton
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOverScript
+    methodName: GO_Title
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOverScript
     methodName: GO_Restart
+  - assembly: Assembly-CSharp
+    fullTypeName: GameOverScript
+    methodName: GO_Quit
   sceneClasses:
+    Assets/Scenes/GameOver.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11342}
+    - Class: 114
+      Script: {instanceID: 11686}
+    - Class: 114
+      Script: {instanceID: 12068}
+    - Class: 114
+      Script: {instanceID: 13180}
+    - Class: 114
+      Script: {instanceID: 13252}
+    - Class: 114
+      Script: {instanceID: 13934}
+    - Class: 114
+      Script: {instanceID: 14522}
+    - Class: 114
+      Script: {instanceID: 17164}
+    - Class: 114
+      Script: {instanceID: 17456}
+    - Class: 114
+      Script: {instanceID: 17614}
+    - Class: 114
+      Script: {instanceID: 18784}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
     Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
@@ -134,33 +211,33 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11064}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 12390}
+      Script: {instanceID: 12068}
     - Class: 114
-      Script: {instanceID: 13242}
+      Script: {instanceID: 12398}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 14512}
+      Script: {instanceID: 13934}
     - Class: 114
-      Script: {instanceID: 17154}
+      Script: {instanceID: 14522}
     - Class: 114
-      Script: {instanceID: 17294}
+      Script: {instanceID: 17164}
     - Class: 114
-      Script: {instanceID: 17446}
+      Script: {instanceID: 17304}
     - Class: 114
-      Script: {instanceID: 17604}
+      Script: {instanceID: 17456}
     - Class: 114
-      Script: {instanceID: 18694}
+      Script: {instanceID: 17614}
     - Class: 114
-      Script: {instanceID: 18774}
+      Script: {instanceID: 18704}
     - Class: 114
-      Script: {instanceID: 38214}
+      Script: {instanceID: 18784}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -201,39 +278,47 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11334}
+      Script: {instanceID: 11052}
     - Class: 114
-      Script: {instanceID: 11678}
+      Script: {instanceID: 11342}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 11686}
     - Class: 114
-      Script: {instanceID: 13242}
+      Script: {instanceID: 12068}
     - Class: 114
-      Script: {instanceID: 13686}
+      Script: {instanceID: 13252}
     - Class: 114
-      Script: {instanceID: 13924}
+      Script: {instanceID: 13696}
     - Class: 114
-      Script: {instanceID: 14512}
+      Script: {instanceID: 13934}
     - Class: 114
-      Script: {instanceID: 15068}
+      Script: {instanceID: 14522}
     - Class: 114
-      Script: {instanceID: 16270}
+      Script: {instanceID: 15078}
     - Class: 114
-      Script: {instanceID: 16784}
+      Script: {instanceID: 16280}
     - Class: 114
-      Script: {instanceID: 17154}
+      Script: {instanceID: 16794}
     - Class: 114
-      Script: {instanceID: 17446}
+      Script: {instanceID: 17164}
     - Class: 114
-      Script: {instanceID: 17604}
+      Script: {instanceID: 17456}
     - Class: 114
-      Script: {instanceID: 18020}
+      Script: {instanceID: 17614}
     - Class: 114
-      Script: {instanceID: 18774}
+      Script: {instanceID: 18030}
     - Class: 114
-      Script: {instanceID: 18828}
+      Script: {instanceID: 18784}
     - Class: 114
-      Script: {instanceID: 19352}
+      Script: {instanceID: 18838}
+    - Class: 114
+      Script: {instanceID: 19362}
+    - Class: 114
+      Script: {instanceID: 20166}
+    - Class: 114
+      Script: {instanceID: 37962}
+    - Class: 114
+      Script: {instanceID: 37982}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -259,6 +344,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PowerUp
+  - hash:
+      serializedVersion: 2
+      Hash: fe4c75203a9743390fe41454f7d841d0
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MainMenu
   - hash:
       serializedVersion: 2
       Hash: 80aeb876b0e95f6256bbfcbf33e26e84
@@ -559,6 +650,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnScrollRectValueChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 49bf027c8d0350017e8462bac16b7d62
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GameOverScript
   - hash:
       serializedVersion: 2
       Hash: 47d50f529890b9237021f88334dc1cf6
@@ -975,7 +1072,7 @@ ScriptsOnlyBuild:
     className: TMP_SpriteAnimator
   - hash:
       serializedVersion: 2
-      Hash: d8b799cab3e28f14141e12bf4a82b9da
+      Hash: 3259a7873378580cb61053ed9c001549
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: PauseSystem
@@ -1437,10 +1534,10 @@ ScriptsOnlyBuild:
     className: InputActionEditorWindow
   - hash:
       serializedVersion: 2
-      Hash: 4ff5b93302245fe7c17299435b504f61
+      Hash: c63e20305c5bf99d2868c28637a77132
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: MysteryShip
+    className: VanSpawning
   - hash:
       serializedVersion: 2
       Hash: a90f6a00b23520788be7d89ee3b0773d
@@ -1455,12 +1552,19 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   - hash:
       serializedVersion: 2
-      Hash: fe4c75203a9743390fe41454f7d841d0
+      Hash: f68e72601e0f049b21d06a64575b0c9e
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: MainMenu
+    className: VanLeft
+  - hash:
+      serializedVersion: 2
+      Hash: a827faf9abb4e3a90a694fdb2d8d2324
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: VanRight
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
   - Assets/Scenes/SpaceinDavers.unity
+  - Assets/Scenes/GameOver.unity
   playerPath: D:/UnityBuilds/Space inDavers.exe

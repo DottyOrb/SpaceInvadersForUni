@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     {
         _Beam = GameObject.Find("Beam");
         _Beam.SetActive(false);
-        Debug.Log("Start");
+        //Debug.Log("Start");
     }
 
     private void Update()
@@ -104,19 +104,19 @@ public class Player : MonoBehaviour
         }
         if (other.gameObject.layer == LayerMask.NameToLayer("PowerUp"))
         {
-            Debug.Log("Collision1");
+            //Debug.Log("Collision1");
             _Beam.SetActive(true);
-            Debug.Log("Collision2");
+            //Debug.Log("Collision2");
             StartCoroutine(EndBeam(1));
         }
 
     }
     private IEnumerator EndBeam(float delay)
     {
-        Debug.Log("hi");
+        //Debug.Log("hi");
         yield return new WaitForSeconds(delay);
         _Beam.SetActive(false);
-        Debug.Log("EndBeam");
+        //Debug.Log("EndBeam");
         
     }
 

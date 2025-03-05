@@ -1,13 +1,18 @@
 <linker>
 	<assembly fullname="Assembly-CSharp">
 		<type fullname="Bunker" preserve="nothing"/>
+		<type fullname="GameOverScript" preserve="nothing"/>
 		<type fullname="Invader" preserve="nothing"/>
 		<type fullname="Invaders" preserve="nothing"/>
 		<type fullname="MainMenu" preserve="nothing"/>
 		<type fullname="PauseSystem" preserve="nothing"/>
 		<type fullname="Player" preserve="nothing"/>
+		<type fullname="PowerUp" preserve="nothing"/>
 		<type fullname="Projectile" preserve="nothing"/>
 		<type fullname="ScoreManager" preserve="nothing"/>
+		<type fullname="VanLeft" preserve="nothing"/>
+		<type fullname="VanRight" preserve="nothing"/>
+		<type fullname="VanSpawning" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
 		<type fullname="UnityEngine.U2D.Animation.BufferManager" preserve="nothing"/>

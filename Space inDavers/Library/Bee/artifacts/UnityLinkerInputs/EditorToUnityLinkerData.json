@@ -28,6 +28,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -38,9 +39,17 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "GameOverScript",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "",
@@ -69,6 +78,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -93,6 +103,7 @@
             "fullManagedTypeName": "",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -110,6 +121,7 @@
             "fullManagedTypeName": "",
             "moduleName": "AI",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -132,6 +144,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "Player",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "PowerUp",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -239,6 +258,7 @@
             "fullManagedTypeName": "UnityEditor.MonoScript",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -284,6 +304,7 @@
             "fullManagedTypeName": "UnityEngine.AudioBehaviour",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -294,6 +315,7 @@
             "fullManagedTypeName": "UnityEngine.AudioListener",
             "moduleName": "Audio",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -304,6 +326,7 @@
             "fullManagedTypeName": "UnityEngine.Behaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -323,6 +346,7 @@
             "fullManagedTypeName": "UnityEngine.Camera",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -333,6 +357,7 @@
             "fullManagedTypeName": "UnityEngine.Canvas",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -343,6 +368,7 @@
             "fullManagedTypeName": "UnityEngine.CanvasRenderer",
             "moduleName": "UI",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -362,6 +388,7 @@
             "fullManagedTypeName": "UnityEngine.Component",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -372,6 +399,7 @@
             "fullManagedTypeName": "UnityEngine.Cubemap",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity"
             ]
         },
@@ -388,6 +416,7 @@
             "fullManagedTypeName": "UnityEngine.Font",
             "moduleName": "TextRendering",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -398,6 +427,7 @@
             "fullManagedTypeName": "UnityEngine.GameObject",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -450,6 +480,7 @@
             "fullManagedTypeName": "UnityEngine.LightmapSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -460,6 +491,7 @@
             "fullManagedTypeName": "UnityEngine.Material",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -470,6 +502,7 @@
             "fullManagedTypeName": "UnityEngine.MonoBehaviour",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -480,6 +513,7 @@
             "fullManagedTypeName": "UnityEngine.Object",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -497,6 +531,7 @@
             "fullManagedTypeName": "UnityEngine.RectTransform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -524,6 +559,7 @@
             "fullManagedTypeName": "UnityEngine.RenderSettings",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -543,6 +579,7 @@
             "fullManagedTypeName": "UnityEngine.Shader",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -553,6 +590,7 @@
             "fullManagedTypeName": "UnityEngine.Sprite",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -573,6 +611,7 @@
             "fullManagedTypeName": "UnityEngine.TextAsset",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -583,6 +622,7 @@
             "fullManagedTypeName": "UnityEngine.Texture",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -593,6 +633,7 @@
             "fullManagedTypeName": "UnityEngine.Texture2D",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -603,6 +644,7 @@
             "fullManagedTypeName": "UnityEngine.Transform",
             "moduleName": "Core",
             "usedInScenes": [
+                "Assets/Scenes/GameOver.unity",
                 "Assets/Scenes/MainMenu.unity",
                 "Assets/Scenes/SpaceinDavers.unity"
             ]
@@ -653,6 +695,27 @@
             "managedAssemblyName": "UnityEngine.UI.dll",
             "nativeClass": "",
             "fullManagedTypeName": "UnityEngine.UI.Image",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VanLeft",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VanRight",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "VanSpawning",
             "moduleName": "",
             "usedInScenes": []
         }

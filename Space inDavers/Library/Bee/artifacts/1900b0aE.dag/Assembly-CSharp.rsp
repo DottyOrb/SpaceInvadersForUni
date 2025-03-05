@@ -427,12 +427,14 @@
 "Assets/Scripts/Invader.cs"
 "Assets/Scripts/Invaders.cs"
 "Assets/Scripts/MainMenu.cs"
-"Assets/Scripts/MysteryShip.cs"
 "Assets/Scripts/PauseSystem.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/PowerUp.cs"
 "Assets/Scripts/Projectile.cs"
 "Assets/Scripts/ScoreManager.cs"
+"Assets/Scripts/VanLeft.cs"
+"Assets/Scripts/VanRight.cs"
+"Assets/Scripts/VanSpawning.cs"
 -langversion:9.0
 /deterministic
 /optimize+
