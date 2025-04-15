@@ -3,7 +3,7 @@ using UnityEngine;
 public class VanRight : MonoBehaviour
 {
     private Vector3 _direction = Vector2.right;
-    int speed = 8;
+    int speed = 6;
     public float timeTillDespawn = 20;
     [SerializeField] private int invaderScore;
 
