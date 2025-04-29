@@ -6,6 +6,7 @@ public class MainMenu : MonoBehaviour
     public void StartGame() 
     {
         SceneManager.LoadScene("SpaceinDavers");
+        Debug.Log("Hello");
     }
 
     public void QuitGame() 

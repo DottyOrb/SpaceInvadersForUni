@@ -10,6 +10,7 @@ public class WinScreen : MonoBehaviour
     public void TitleButton()
     {
         SceneManager.LoadScene("MainMenu");
+        ScoreManager.instance.ResetScore();
     }
     public void QuitButton()
     {
